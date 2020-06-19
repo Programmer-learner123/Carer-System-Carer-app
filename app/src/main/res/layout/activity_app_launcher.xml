@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppLauncher"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="80dp"
+        android:text="SHARE LOCATION"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25dp">
+
+    </TextView>
+
+
+
+  <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobile_number"
+        android:hint="Enter Mobile Number"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+
+        >
+  </EditText>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/message"
+        android:hint="Enter Message"
+        android:inputType="text"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        >
+
+    </EditText>
+
+       <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="110dp"
+           android:fontFamily="casual"
+           android:textStyle="bold"
+           android:text="WHATSAPP"
+           android:textColor="@color/cardback"
+           android:textSize="25dp"
+           android:id="@+id/fbButton"
+           android:background="@drawable/rounded_button"
+           android:padding="10dp"
+           >
+
+
+
+
+</Button>
+</LinearLayout>
+
